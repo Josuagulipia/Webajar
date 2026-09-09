@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Media Pembelajaran Interaktif</title>
+    <meta
+      name="description"
+      content="Media pembelajaran interaktif berbasis website untuk siswa SMA/SMK"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="data:," />
+  </head>
+  <body>
+    <div id="confetti-layer"></div>
+    <div id="toast-area"></div>
+
+    <div class="app-shell">
+      <!-- ============ SIDEBAR (Desktop/Tablet) ============ -->
+      <aside class="sidebar">
+        <div class="brand">
+          <span class="brand-emoji">🦉</span>
+          <div class="brand-text">
+            <strong>Petualangan Belajar</strong>
+            <span>Informatika &middot; TIK</span>
+          </div>
+        </div>
+
+        <nav class="side-nav">
+          <a href="#/beranda" data-nav="beranda"
+            ><span class="bn-icon">🏠</span> Beranda</a
+          >
+          <a href="#/materi" data-nav="materi"
+            ><span class="bn-icon">📚</span> Materi</a
+          >
+          <a href="#/misi" data-nav="misi"
+            ><span class="bn-icon">🎯</span> Misi</a
+          >
+          <a href="#/praktik" data-nav="praktik"
+            ><span class="bn-icon">🎮</span> Praktik</a
+          >
+          <a href="#/kuis" data-nav="kuis"
+            ><span class="bn-icon">🧠</span> Kuis</a
+          >
+          <a href="#/prestasi" data-nav="prestasi"
+            ><span class="bn-icon">🏆</span> Prestasi</a
+          >
+          <a href="#/progress" data-nav="progress"
+            ><span class="bn-icon">📊</span> Progress</a
+          >
+        </nav>
+
+        <nav class="side-nav">
+          <a href="#/boss" data-nav="boss"
+            ><span class="bn-icon">👑</span> Boss Challenge</a
+          >
+          <a href="#/glossary" data-nav="glossary"
+            ><span class="bn-icon">📖</span> Kamus Istilah</a
+          >
+          <a href="#/game" data-nav="game"
+            ><span class="bn-icon">🎲</span> Mini Game</a
+          >
+          <a href="#/refleksi" data-nav="refleksi"
+            ><span class="bn-icon">🪞</span> Refleksi</a
+          >
+        </nav>
+
+        <div class="sidebar-footer">
+          <button class="btn btn-outline btn-sm" id="btn-guru">
+            👩‍🏫 Mode Guru
+          </button>
+        </div>
+      </aside>
+
+      <!-- ============ MAIN COLUMN ============ -->
+      <div class="main-col">
+        <header class="topbar">
+          <div class="topbar-search">
+            <input type="text" id="btn-search" placeholder="Cari materi..." />
+          </div>
+          <div class="topbar-stats">
+            <span class="pill">⭐ <span id="stat-xp">0</span> XP</span>
+            <span class="pill" id="stat-level">Lv.1 Penjelajah</span>
+          </div>
+          <div class="topbar-actions">
+            <button class="icon-btn" id="btn-sound" title="Suara">🔊</button>
+            <button class="icon-btn" id="btn-dark" title="Mode Gelap">
+              🌙
+            </button>
+          </div>
+        </header>
+
+        <main id="view-root" class="view-root"></main>
+
+        <!-- ============ BOTTOM NAV (Mobile) ============ -->
+        <nav class="bottom-nav">
+          <a href="#/beranda" data-nav="beranda"
+            ><span class="bn-icon">🏠</span>Beranda</a
+          >
+          <a href="#/materi" data-nav="materi"
+            ><span class="bn-icon">📚</span>Materi</a
+          >
+          <a href="#/misi" data-nav="misi"
+            ><span class="bn-icon">🎯</span>Misi</a
+          >
+          <a href="#/kuis" data-nav="kuis"
+            ><span class="bn-icon">🧠</span>Kuis</a
+          >
+          <a href="#/progress" data-nav="progress"
+            ><span class="bn-icon">📊</span>Progress</a
+          >
+        </nav>
+      </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="storage.js"></script>
+    <script src="ui.js"></script>
+    <script src="gamifikasi.js"></script>
+    <script src="activities.js"></script>
+    <script src="quiz.js"></script>
+    <script src="guru.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
